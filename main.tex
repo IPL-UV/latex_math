@@ -14,11 +14,11 @@
 % Title-page %
 %%%%%%%%%%%%%%
 
-\logo{./resources/pdf/logo.pdf}
-\institute{Random University}
-\faculty{Faculty of Whatever Sciences}
+\logo{./resources/pdf/isp_logo.png}
+\institute{Universit\"at de Val\`encia}
+\faculty{Image and Signal Processing Laboratory}
 %\department{Department of Anything but Psychology}
-\title{A sleek \LaTeX{} template}
+\title{A Math Notation \LaTeX{} Template}
 \subtitle{With a sleeker title-page}
 \author{\textit{Author}\\François \textsc{Rozet}}
 %\supervisor{Linus \textsc{Torvalds}}
@@ -60,18 +60,17 @@
     \romantableofcontents
 
     \chapter{Introduction}
+    \input{sections/intro}
+    
+    \chapter{Mathematics}
+    \input{sections/vectors}
+    \input{sections/matrices}
+    \include{sections/prob}
+    \include{sections/info_theory}
+    
+    \chapter{Machine Learning}
+    \input{sections/gps}
 
-    Sleek Template is a minimal collection of \LaTeX{} packages and settings that ease the writing of beautiful documents. While originally meant for theses, it is perfectly suitable for project reports, articles, syntheses, etc. -- with a few adjustments, like margins.
-
-    It is composed of four separate packages -- \texttt{sleek}, \texttt{sleek-title}, \texttt{sleek-theorems} and \texttt{sleek-listings} -- each of which can be used individually.
-
-    \begin{lstlisting}[style=latexFrameTB, caption={Example of Sleek Template packages usage.}, gobble=8]
-        \usepackage[english]{babel}
-        \usepackage[noheader]{packages/sleek}
-        \usepackage{packages/sleek-title}
-    \end{lstlisting}
-
-    \blindfootnote{If you are a \LaTeX{} beginner consider the excellent \href{https://www.overleaf.com/learn}{Overleaf tutorial}. Also, there are a lot of symbols available in \LaTeX{} and, therefore, in this template. I recommend the use of \enquote{The Comprehensive \LaTeX{} Symbol List} \cite{pakin2020comprehensive} for searching symbols.}
 
     \chapter{Features}
 

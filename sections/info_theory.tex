@@ -1,0 +1,54 @@
+\section{Information Theory}
+
+% ======================================
+% SINGLE VARIATE MEASURES
+% ======================================
+\subsection{Single Variable}
+\newcommand{\entropy}[1]{\text{H}\left(#1\right)}
+\newcommand{\info}[1]{\text{I}\left(#1\right)}
+\newcommand{\totalcorr}[1]{\text{TC}\left(#1\right)}
+
+
+
+
+\begin{table}[h]
+    \centering
+    \caption{List of symbols and their meaning for single variable measures.}
+    \begin{tabular}{m{7em}m{20em}}
+        \toprule
+        \textbf{Symbol}             & \textbf{Name} \\
+        \midrule
+        $\info{\mathbf{X}}$         & Self-Information\\
+        $\entropy{\mathbf{X}}$      & Entropy \\
+        $\totalcorr{\mathbf{X}}$    & Total Correlation \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:info_theory}
+\end{table}
+
+
+% ======================================
+% MULTI VARIATE MEASURES
+% ======================================
+\subsection{Multiple Variables}
+
+
+\newcommand{\jointentropy}[2]{\text{H}\left(#1,#2\right)}
+\newcommand{\mutualinfo}[2]{\text{I}\left(#1,#2\right)}
+\newcommand{\kld}[2]{\text{D}_{\text{KL}}\left[#1||#2\right]}
+
+
+\begin{table}[h]
+    \centering
+    \caption{List of symbols and their meaning for multiple variable measures.}
+    \begin{tabular}{m{7em}m{20em}}
+        \toprule
+        \textbf{Symbol} & \textbf{Meaning} \\
+        \midrule
+        $\jointentropy{\mathbf{X}}{\mathbf{Y}}$ & Joint Entropy \\
+        $\mutualinfo{\mathbf{X}}{\mathbf{Y}}$   & Mutual Information \\
+        $\kld{\mathbf{X}}{\mathbf{Y}}$          & Kullback-Leibler Divergence \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:info_theory}
+\end{table}
